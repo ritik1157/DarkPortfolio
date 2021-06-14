@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-right: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 1.4rem;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  height: 100vh;
+}
+
+body button:hover {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 7.5rem;
+  background: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 300;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar li {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+}
+
+.sidebar li:first-child {
+  background: black;
+  color: #fff;
+}
+
+.sidebar li:first-child:hover {
+  background: #fff;
+}
+
+.sidebar li:first-child:hover p,
+.sidebar li:first-child:hover i {
+  color: black;
+}
+
+.sidebar li:hover {
+  cursor: pointer;
+  background: black;
+}
+
+.sidebar i {
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: black;
+  margin: 0 7rem 2rem;
+}
+
+.avatar {
+  background: url("./Assets/avatar_smoke.jpg");
+  width: 100%;
+  height: 8.25rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 4rem;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25rem;
+}
+
+.intro .name {
+  font-size: 4rem;
+}
+
+p {
+  font-weight: 100;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.btn {
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.4em 0.8em;
+  margin: 1.4rem 0;
+}
+
+.images_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.images_container div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.images_container img {
+  margin-bottom: 0.7rem;
+  width: 100%;
+}
+
+.contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact li i {
+  font-size: 2rem;
+}
+
+.contact a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.contact li + li {
+  margin-top: 1rem;
+}
+
+.price_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price_card {
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price_card .package_name {
+  background-color: #616161;
+  color: #fff;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+.price_card .package_price {
+  background: #fff;
+  color: black;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #757575;
+}
+
+footer .icon_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8rem;
+}
+
+footer .social_icons::after {
+  content: "Connect With Me";
+  color: #f29f05;
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+}
+
+footer i:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+  margin-left: auto;
+  margin-top: auto;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,123 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script defer src="./index.js"></script>
+
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <div class="avatar"></div>
+            <div class="nav">
+                <ul>
+                    <li onclick="scrollToElement('.home')"><i class="fas fa-home"></i>
+                        <p>Home</p>
+                    </li>
+                    <li onclick="scrollToElement('.about')"><i class="icon fas fa-user"></i>
+                        <p>About</p>
+                    </li>
+                    <li onclick="scrollToElement('.photos')"><i class="far fa-eye"></i>
+                        <p>Photos</p>
+                    </li>
+                    <li onclick="scrollToElement('.contact')"><i class="icon fas fa-envelope"></i>
+                        <p>Contact</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <section class="home">
+                <div class="intro">
+                    <div class="name">I'm John Doe.</div>
+                    <div class="designation">Photographer and Web Designer</div>
+                </div>
+                <img class="profile" src="./Assets/man_smoke.jpg" alt="Profile">
+            </section>
+
+            <section class="about">
+                <h2>My Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur delectus magni, illo illum
+                    repellendus doloribus impedit placeat tempora et, voluptatem in natus tempore voluptas ipsam
+                    corrupti provident. Ad, quibusdam laboriosam? Dolore, reprehenderit! Eum nemo tenetur, distinctio
+                    iusto id quasi accusantium excepturi similique, consequuntur ipsum numquam quaerat ipsam voluptatum
+                    quis nam?</p>
+
+                <button class="btn"><i class="fas fa-download"></i> Download Resume</button>
+
+                <h3>My Price</h3>
+                <div class="price_container">
+                    <div class="price_card">
+                        <div class="package_name">Basic</div>
+                        <div class="package_price">INR 110</div>
+                    </div>
+                    <div class="price_card">
+                        <div class="package_name">Advance</div>
+                        <div class="package_price">INR 1110</div>
+                    </div>
+                    <div class="price_card">
+                        <div class="package_name">Advance</div>
+                        <div class="package_price">INR 1110</div>
+                    </div>
+                    <div class="price_card">
+                        <div class="package_name">Advance</div>
+                        <div class="package_price">INR 1110</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="photos">
+                <h2>Work Images</h2>
+                <div class="images_container">
+
+                    <div class="left"><img src="https://www.w3schools.com/w3images/wedding.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/underwater.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="">
+                        <img src="https://www.w3schools.com/w3images/p6.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li>
+                        <div style="width: 50px;"><i class="fas fa-map-marker-alt"></i></div>
+                        <a href="https://goo.gl/maps/729mBhaC61jVrFZh7">New Delhi</a>
+                    </li>
+                    <li>
+                        <div style="width: 50px;"><i class="fas fa-phone-alt"></i>
+                        </div>
+                        <a href="tel:9899619919">9899619919</a>
+                    </li>
+                    <li>
+                        <div style="width: 50px;"><i class="icon fas fa-envelope"></i>
+                        </div>
+                        <a href="mailto:ritik1157@gmail.com">ritik1157@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+
+            <footer>
+                <div class="social_icons">
+                    <div class="icon_container">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <p>Developed and Hosted with ❤️ by Ritik</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
